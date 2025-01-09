@@ -20,6 +20,47 @@ Siga as etapas abaixo para configurar o projeto em sua máquina local:
 Clone este repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/usuario/seu-repositorio.git
-cd seu-repositorio
-# teste_pratico
+git clone https://github.com/FelipeSDS23/teste_pratico.git
+cd teste_pratico
+```
+
+### 2. Instale as dependências do Laravel
+
+Execute o seguinte comando para instalar as dependências do projeto:
+
+```bash
+composer install
+```
+
+### 3. Crie e configure o banco de dados
+
+Certifique-se de que o MySQL esteja em funcionamento. Crie um banco de dados para o projeto e configure as credenciais no arquivo .env.
+
+Exemplo de configuração no arquivo .env:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nome_do_banco
+DB_USERNAME=seu_usuario
+DB_PASSWORD=sua_senha
+```
+
+### 4. Execute as migrações
+
+Execute as migrações para criar as tabelas no banco de dados:
+```bash
+php artisan migrate
+```
+
+### 5. Inicie o servidor
+
+Inicie o servidor embutido do Laravel com o comando:
+
+```bash
+php artisan serve
+```
+
+Como usar
+Depois de iniciar o servidor, você pode acessar a aplicação em seu navegador pelo link: http://127.0.0.1:8000/
