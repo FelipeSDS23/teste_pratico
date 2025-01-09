@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+/* início menu*/
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #FFD700;
+}
+
+/* fim menu*/
+
+/* início mensagem de retorno */
+.mensagem {
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    margin: 15px auto;
+    width: 500px;
+    text-align: center;
+}
+
+.erro {
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 15px auto;
+    width: 500px;
+    text-align: center;
+}
+/* fim mensagem de retorno */
+
+/* início cadastro */
+.cadastro-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cadastro-container .formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-container .formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.cadastro-container .formulario input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cadastro-container .formulario button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-container .formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* fim cadastro*/
+
+/* início listar */
+.listar-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.listar-container .tabela {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: left;
+}
+
+.listar-container .tabela th, .tabela td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.listar-container .tabela th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.listar-container .tabela tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.listar-container .tabela tr:hover {
+    background-color: #ddd;
+}
+
+.listar-container .botao {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+}
+
+.listar-container .botao.editar {
+    background-color: #28a745;
+}
+
+.listar-container .botao.editar:hover {
+    background-color: #218838;
+}
+
+.listar-container .botao.excluir {
+    background-color: #dc3545;
+}
+
+.listar-container .botao.excluir:hover {
+    background-color: #c82333;
+}
+/* fim listar */
+
+@media (max-width: 900px) {
+    .menu ul li a {
+        font-size: 1em;
+    }
+
+    /* início mensagem de retorno */
+    .mensagem {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .erro {
+        margin: 10px auto;
+        width: 90%;
+    }
+    /* fim mensagem de retorno */
+
+    /* início listar */
+    .listar-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .listar-container .tabela{
+        font-size: .9em;
+        width: 100%;
+    }
+
+    .listar-container .tabela td > a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+    /* fim listar */
+}
