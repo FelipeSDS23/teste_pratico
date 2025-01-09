@@ -47,6 +47,8 @@ DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
 ```
 
+O exemplo do arquivo completo pode ser encontrado no arquivo .env.example
+
 ### 4. Execute as migrações
 
 Execute as migrações para criar as tabelas no banco de dados:
@@ -54,7 +56,15 @@ Execute as migrações para criar as tabelas no banco de dados:
 php artisan migrate
 ```
 
-### 5. Inicie o servidor
+### 5. Gere a chave de aplicativo
+
+Laravel exige uma chave única para o aplicativo. Gere a chave de aplicativo executando o seguinte comando:
+
+```bash
+php artisan key:generate
+```
+
+### 6. Inicie o servidor
 
 Inicie o servidor embutido do Laravel com o comando:
 
